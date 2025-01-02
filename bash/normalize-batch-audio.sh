@@ -8,5 +8,4 @@
 EXT="mp3"
 RATE="320k"
 
-ffmpeg-normalize *.$EXT -c:a libmp3lame -b:a $RATE -ext $EXT 
-
+ffmpeg-normalize *.$EXT -c:a libmp3lame -b:a $RATE -ext $EXT -nt peak -t 0
